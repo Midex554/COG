@@ -1,2 +1,1 @@
-# COG
-Chapel of glory church
+# ChapelofGlory
