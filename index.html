@@ -24,11 +24,11 @@
       <!-- ✅ Navigation Links (with close button inside) -->
       <ul class="nav-links" id="navLinks">
 
-        <li><a href="#" class="active">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">EVENTS</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
       </ul>
 
       <!-- ✅ Menu Button -->
@@ -98,14 +98,14 @@
         <!-- Right: Chapel Building Image -->
         <div class="overview-image">
           <img
-            src="images/chapel-building.jpg"
+            src="Image/WhatsApp Image 2026-04-17 at 4.58.15 PM.jpeg"
             alt="Chapel Of Glory Building"
           />
         </div>
       </div>
     </section>
 
-    <!-- Devotional Store Section -->
+    <!-- Devotional Store Section 
     <section class="devotional-store">
       <div class="store-container">
         <h2 class="section-title">Devotional Store</h2>
@@ -115,7 +115,7 @@
         </p>
 
         <div class="store-grid">
-          <!-- Item 1: Open Heaven -->
+          Item 1: Open Heaven 
           <div class="store-card">
             <div class="card-image">
               <img src="images/hymnbook.jpg" alt="Hymn Book" />
@@ -133,10 +133,10 @@
                 View HYMM
               </a>
             </div>
-          </div>
+          </div>-->
 
           <!-- Item 2: Hymn Book -->
-          <!-- Hymn Book - Updated with PDF Viewer -->
+          <!-- Hymn Book - Updated with PDF Viewer 
           <div class="store-card">
             <div class="card-image">
               <img src="images/hymnbook.jpg" alt="Hymn Book" />
@@ -156,7 +156,7 @@
             </div>
           </div>
 
-          <!-- Item 3: Sunday School 
+          Item 3: Sunday School 
           <div class="store-card">
             <div class="card-image">
               <img src="images/sunday-school.jpg" alt="Sunday School Manual" />
@@ -168,7 +168,7 @@
               <button class="download-btn">DOWNLOAD SAMPLE</button>
             </div>
           </div>
-        </div> -->
+        </div> 
 
         <div class="store-footer">
           For full purchases, please contact us at
@@ -181,52 +181,76 @@
           or visit the chapel.
         </div>
       </div>
-    </section>
+    </section> -->
 
 
+<!-- Prayer Request Section - Similar to Email Updates -->
 <!-- Prayer Request Section -->
 <section class="prayer-section">
-  <div class="prayer-container">
-    <h2>Prayer Request</h2>
-    <p class="prayer-intro">
-      Do you have a burden on your heart? Submit your prayer request below.<br>
-      Our Prophet and the prayer team will stand with you in faith and intercede on your behalf.
-    </p>
+  <div class="prayer-wrapper">
 
-    <form id="prayerForm" class="prayer-form">
+    <!-- Left Side -->
+    <div class="prayer-left">
+      <h2>Prayer Request</h2>
+      <p>Submit your prayer request below. Our Prophet and the prayer team will stand with you in faith and intercede on your behalf.</p>
       
-      <div class="form-row">
-        <div class="form-group">
-          <label for="fullName">Full Name *</label>
-          <input type="text" id="fullName" required placeholder="Enter your full name">
+      <ul class="prayer-benefits">
+        <li>✓ Confidential and private</li>
+        <li>✓ Prayed over by the Prophet and team</li>
+        <li>✓ Biblical encouragement will be sent</li>
+        <li>✓ God answers prayers (Matthew 18:19)</li>
+      </ul>
+    </div>
+
+    <!-- Right Side - Form with Dropdown -->
+    <div class="prayer-right">
+      <form id="prayerForm" class="prayer-form">
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" required placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" required placeholder="your@email.com">
+          </div>
         </div>
+
         <div class="form-group">
-          <label for="email">Email Address *</label>
-          <input type="email" id="email" required placeholder="your@email.com">
+          <label for="phone">Phone Number (optional)</label>
+          <input type="tel" id="phone" placeholder="+234 000 000 0000">
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for="phone">Phone Number (optional)</label>
-        <input type="tel" id="phone" placeholder="+234 000 000 0000">
-      </div>
+        <!-- Dropdown for Prayer Category -->
+        <div class="form-group">
+          <label for="prayerCategory">Prayer Category *</label>
+          <select id="prayerCategory" required>
+            <option value="">Select Prayer Category</option>
+            <option value="Healing">Healing & Health</option>
+            <option value="Breakthrough">Breakthrough & Success</option>
+            <option value="Guidance">Guidance & Direction</option>
+            <option value="Academic">Academic Success</option>
+            <option value="Financial">Financial Breakthrough</option>
+            <option value="Deliverance">Deliverance & Protection</option>
+            <option value="Spiritual">Spiritual Growth</option>
+            <option value="Others">Others (Please specify below)</option>
+          </select>
+        </div>
 
-      <div class="form-group">
-        <label for="prayerTitle">Prayer Title (optional)</label>
-        <input type="text" id="prayerTitle" placeholder="e.g. Healing, Breakthrough, Guidance">
-      </div>
+        <div class="form-group">
+          <label for="prayerPoint">Your Prayer Request / Prayer Point *</label>
+          <textarea id="prayerPoint" rows="6" required placeholder="Write your detailed prayer request here..."></textarea>
+        </div>
 
-      <div class="form-group">
-        <label for="prayerPoint">Your Prayer Request / Prayer Point *</label>
-        <textarea id="prayerPoint" rows="7" required placeholder="Write your prayer request here..."></textarea>
-      </div>
+        <button type="submit" class="submit-btn">Submit Prayer Request</button>
+      </form>
+    </div>
 
-      <button type="submit" class="submit-btn">Submit Prayer Request</button>
-    </form>
-
-    <p class="note">Your prayer request will be sent directly to the Prophet via email.</p>
   </div>
 </section>
+
+
 
     <!-- Footer -->
   <footer class="footer">
@@ -316,8 +340,8 @@
       alert("Please fill in your name, email, and prayer request.");
       return;
     }
-
-    let body = `New Prayer Request from Chapel of Glory Website\n\n`;
+// The email body content sent to the Prophet will be formatted as follows:
+    let body = `New Prayer Request from Chapel of Glory Member\n\n`;
     body += `Name: ${fullName}\n`;
     body += `Email: ${email}\n`;
     if (phone) body += `Phone: ${phone}\n`;
