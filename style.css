@@ -412,111 +412,6 @@ body {
   }
 }
 
-/* Prayer Request - Similar to Email Updates Style */
-.prayer-section {
-  padding: 90px 6%;
-  background-color: #f8f9fa;
-}
-
-.prayer-wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  gap: 40px;
-  background: var(--Logo-color);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-
-.prayer-left {
-  flex: 1;
-  padding: 70px 60px;
-  color: var(--Logo-color-3);
-}
-
-.prayer-left h2 {
-  font-size: 38px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  color: var(--logo-color-2);
-}
-
-.prayer-left p {
-  font-size: 17.5px;
-  line-height: 1.7;
-  margin-bottom: 30px;
-  opacity: 0.95;
-}
-
-.prayer-benefits {
-  list-style: none;
-}
-
-.prayer-benefits li {
-  font-size: 17px;
-  margin-bottom: 16px;
-  padding-left: 5px;
-}
-
-.prayer-right {
-  flex: 1;
-  background: var(--Logo-color);
-  padding: 70px 60px;
-  border-radius: 0 16px 16px 0;
-}
-
-.prayer-form .form-group {
-  margin-bottom: 28px;
-}
-
-.prayer-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
-  color: var(--logo-color-2);
-}
-
-.prayer-form input,
-.prayer-form textarea {
-  width: 100%;
-  padding: 14px 16px;
-  border: 2px solid var(--Logo-color);
-  border-radius: 8px;
-  font-size: 16px;
-}
-
-.prayer-form textarea {
-  min-height: 160px;
-  resize: vertical;
-}
-
-.submit-btn {
-  width: 100%;
-  background-color: var(--Logo-color-3);        /* Orange like the subscribe button */
-  color: var(--Logo-color);
-  border: none;
-  padding: 16px;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.submit-btn:hover {
-  background-color: var(--logo-color-2);
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-  .prayer-wrapper {
-    flex-direction: column;
-  }
-  .prayer-left, .prayer-right {
-    padding: 50px 40px;
-  }
-}
 /* Footer */
 .footer {
   background-color: var(--Logo-color);
@@ -626,9 +521,9 @@ body {
     gap: 40px;
   }
 
-@media (max-width: 992px) {
-  .footer-container {
-    grid-template-columns: 1fr 1fr;
+  @media (max-width: 992px) {
+    .footer-container {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
-
