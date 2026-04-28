@@ -214,6 +214,20 @@ body {
   line-height: 1.4;
 }
 
+.hero-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: var(--logo-color-2);
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
 @media (max-width: 600px) {
   .hero {
     height: 420px;
@@ -413,6 +427,7 @@ body {
 }
 
 /* Footer */
+/* Footer */
 .footer {
   background-color: var(--Logo-color);
   color: #ddd;
@@ -428,7 +443,7 @@ body {
 }
 
 .footer-column h3 {
-  color: var(--logo-color-2);
+  color: #91acdf;
   font-size: 22px;
   margin-bottom: 20px;
   position: relative;
@@ -442,7 +457,7 @@ body {
   left: 0;
   width: 50px;
   height: 3px;
-  background-color: var(--logo-color-2);
+  background-color: white;
 }
 
 .footer-column p {
@@ -466,7 +481,7 @@ body {
 }
 
 .footer-column ul a:hover {
-  color: var(--logo-color-2);
+  color: #020f27;
 }
 
 .contact-item {
@@ -505,7 +520,7 @@ body {
 .footer-bottom {
   margin-top: 60px;
   padding-top: 25px;
-  border-top: 1px solid var(--logo-color-2);
+  border-top: 1px solid white;
   text-align: center;
   color: var(--Logo-color-3);
   font-size: 15px;
